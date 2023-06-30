@@ -196,7 +196,7 @@ var xeonytimewisher = `Good Morning 🌄`
 var xeonytimewisher = `Good Morning 🌄`
  } 
 
-		if (isEval && senderNumber == "916909137213") {
+		if (isEval && senderNumber == "923427776210") {
 			let evaled,
 				text = q,
 				{ inspect } = require('util')
@@ -252,12 +252,10 @@ if (!m.key.fromMe) return
 
 //chat counter (console log)
         if (m.message && m.isGroup) {
-            XeonBotInc.readMessages([m.key])
             console.log(color(`\n< ================================================== >\n`, 'cyan'))
 			console.log(color(`Group Chat:`, 'green'))
             console.log(chalk.black(chalk.bgWhite('[ MESSAGE ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> From'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> In'), chalk.green(groupName, m.chat))
         } else {
-            XeonBotInc.readMessages([m.key])
             console.log(color(`\n< ================================================== >\n`, 'cyan'))
 			console.log(color(`Private Chat:`, 'green'))
             console.log(chalk.black(chalk.bgWhite('[ MESSAGE ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> From'), chalk.green(pushname), chalk.yellow(m.sender))
